@@ -1,11 +1,12 @@
 {
-  "name": "cwr",
+  "name": "cwra",
   "version": "1.0.0",
-  "description": "cwr is command which creates a boilerplate directory for react-webpack application",
+  "description": "cwra is command which creates a boilerplate directory for react-webpack application",
   "main": "index.js",
   "scripts": {
     "test": "node index"
   },
+  "repository": "https://github.com/omega07/cwr.git",
   "author": "Ayush Shah",
   "license": "MIT",
   "dependencies": {
@@ -13,7 +14,7 @@
     "inquirer": "^8.1.1"
   },
   "bin": {
-    "cwr": "index.js"
+    "cwra": "index.js"
   },
   "keywords": []
 }
