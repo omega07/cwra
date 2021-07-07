@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node index"
   },
-  "repository": "https://github.com/omega07/cwr.git",
+  "repository": "https://github.com/omega07/cwra.git",
   "author": "Ayush Shah",
   "license": "MIT",
   "dependencies": {
