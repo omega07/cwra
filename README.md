@@ -1,15 +1,15 @@
-# cwr
-cwr is command which creates a boilerplate directory for react-webpack application
+# cwra
+cwra is command which creates a boilerplate directory for react-webpack application
 
 
 # Installation
 ```
-npm install -g cwr
+npm install -g cwra
 ```
 
 # Execute
 ```
-cwr
+cwra
 ```
 This will prompt you a question for the Project name.<br>
 **Take care that the directory is not already present**
