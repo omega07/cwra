@@ -1,0 +1,19 @@
+{
+  "name": "cwr",
+  "version": "1.0.0",
+  "description": "cwr is command which creates a boilerplate directory for react-webpack application",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "Ayush Shah",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "inquirer": "^8.1.1"
+  },
+  "bin": {
+    "cwr": "index.js"
+  },
+  "keywords": []
+}
