@@ -1,5 +1,7 @@
 #!/usr/bin/env node
-
+// please don't criticize me ... 
+// i'm going into the 'callback-hell' but since this is a very small application, 
+// i thought why not just get done with it
 const {exec} = require('child_process');
 const inquirer = require('inquirer');
 const {writeFileSync, mkdir} = require('fs');
