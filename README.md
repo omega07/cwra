@@ -23,7 +23,7 @@ project_name
 └─── src
 │    |   index.js
 |    |   index.html
-│       
+│    |   App.js  
 | .babelrc
 | package-lock.json
 | package.json
