@@ -8,8 +8,7 @@ const {writeFileSync, mkdir} = require('fs');
 const process = require('process');
 const path = require('path');
 
-const webpackData = `
-const path =  require('path');
+const webpackData = `const path =  require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'development',
@@ -40,13 +39,35 @@ module.exports = {
     }
 }`
 
-const babelData = `
-{
+const babelData = `{
     "presets": [
         "@babel/preset-react",
         "@babel/preset-env"
     ]
-}`
+}`;
+
+const htmlData = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Webpack App</title>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
+`
+
+const indexJSData = `import React from 'react';
+import App from './App.js'
+import ReactDom, {render} from 'react-dom';
+
+render(
+    <App/>,
+    document.getElementById('root')
+);`
 
 inquirer.prompt([
     {
@@ -68,8 +89,10 @@ inquirer.prompt([
                 console.log('Something went wrong! Please try again.');
                 return;
             }
+            console.log('Creating setup Files!');
             process.chdir(`./src`);
-            writeFileSync('index.js',"");
+            writeFileSync('index.js',indexJSData);
+            writeFileSync('index.html',htmlData);
             process.chdir(`..`);
             console.log('Initializing package.json!');
             exec(`npm init -y`, (err, data) => {
