@@ -69,6 +69,18 @@ render(
     document.getElementById('root')
 );`
 
+const AppJSData = `import React from 'react';
+
+const App = () => {
+    return (
+        <div>
+            <h2>Welcome to the React-Webpack App</h1>
+        </div>
+    )
+}
+
+export default App;`
+
 inquirer.prompt([
     {
         type: "input",
@@ -93,6 +105,7 @@ inquirer.prompt([
             process.chdir(`./src`);
             writeFileSync('index.js',indexJSData);
             writeFileSync('index.html',htmlData);
+            writeFileSync('App.js',AppJSData);
             process.chdir(`..`);
             console.log('Initializing package.json!');
             exec(`npm init -y`, (err, data) => {
