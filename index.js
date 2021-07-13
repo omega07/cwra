@@ -85,7 +85,7 @@ inquirer.prompt([
     {
         type: "input",
         name: "directoryName",
-        message: "Enter directory name:"
+        message: "Enter project name:"
     }
 ]).then(answer => {
     const dirName = answer.directoryName;

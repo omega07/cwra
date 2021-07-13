@@ -1,6 +1,6 @@
 {
   "name": "cwra",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "cwra is command which creates a boilerplate directory for react-webpack application",
   "main": "index.js",
   "scripts": {
